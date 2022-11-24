@@ -1,0 +1,81 @@
+//=================================================================================================================
+// Hero: Spectre
+//=================================================================================================================
+"DOTAAbilities"
+{
+	// Spectral Dagger ms change
+	"custom_spectre_special_bonus_1"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_spectre_spectral_dagger"
+			{
+				"ms_slow_pct"			"12"
+				"ms_boost_pct"			"12"
+			}
+		}
+	}
+
+	// Desolate damage
+	"custom_spectre_special_bonus_2"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_spectre_desolate"
+			{
+				"damage"				"20"
+			}
+		}
+	}
+
+	// Torment cd
+	"custom_spectre_special_bonus_3"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_spectre_torment"
+			{
+				"AbilityCooldown"		"-40"
+			}
+		}
+	}
+
+	// dispersion damage reflected
+	"custom_spectre_special_bonus_4"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_spectre_dispersion"
+			{
+				"damage_reflected"			"5"
+			}
+		}
+	}
+
+	// Haunt illusion damage
+	"custom_spectre_special_bonus_5"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_spectre_infest"
+			{
+				"damage"			"32"
+			}
+		}
+	}
+}

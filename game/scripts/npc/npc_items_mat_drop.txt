@@ -1,0 +1,60 @@
+"items_material"
+{
+	"outpost"
+	{
+		"10"
+		{
+            "count" "4"
+			"1" "item_mat_stick"
+			"2" "item_mat_eyeball"
+            "3" "item_mat_fang"
+            "4" "item_mat_eyeball"
+		}
+	}
+	"cemetary"
+	{
+        "10"
+		{
+            "count" "2"
+			"1"    "item_mat_ectoplasm"
+            "2"    "item_mat_bone"
+		}
+	}
+	"river"
+	{
+		"10"
+		{
+            "count" "3"
+            "1"     "item_mat_fish"
+            "2"     "item_mat_hide"
+            "3"     "item_mat_horn"
+		}
+	}
+	"chapel"
+	{	
+        "10"
+		{
+            "count" "3"
+            "1" "item_mat_stick"
+            "2" "item_mat_salt"
+            "3" "item_mat_knife"
+
+		}
+	}
+	"ancients"
+	{
+		"10"
+		{
+            "count" "1"
+            "1" "item_mat_radiant_ore"
+		}
+	}
+	"roshan"
+	{
+        "100"
+		{
+            "count" "1"
+            "1" "item_mat_direstone"
+		}
+	}
+}

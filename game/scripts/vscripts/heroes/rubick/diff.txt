@@ -1,0 +1,4 @@
+spell steal renamed to simulacrum
+
+null field re-added
+null field now has an active that destroys all projectiles in the radius

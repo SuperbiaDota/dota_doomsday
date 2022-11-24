@@ -1,0 +1,38 @@
+"DOTAAbilities"
+{
+	"item_custom_desolator"
+	{
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_lua"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "3500"
+        "ItemShopTags"                  "damage;unique"
+        "ItemQuality"                   "artifact"
+        "ItemAliases"                   "desolator"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "ShouldBeSuggested"             "1"
+
+        "AbilityValues"
+        {
+            "damage_bonus"              "50"
+            "armor_corruption"          "-6"
+            "duration"                  "7"
+
+        }
+	}
+    "item_recipe_custom_desolator"
+    {
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_custom_desolator"
+        "ItemRequirements"
+        {
+            "01"    "item_blight_stone;item_mithril_hammer;item_mithril_hammer"
+        }
+    }
+}

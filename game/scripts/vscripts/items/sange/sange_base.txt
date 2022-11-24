@@ -1,0 +1,30 @@
+"DOTAAbilities"
+{
+    "item_custom_sange"
+    {
+        "BaseClass"         "item_lua"
+    
+        "ItemCost"          "2050"
+        "ItemKillable"      "1"
+        "ItemSellable"      "1"
+        "ItemPurchasable"   "1"
+        "ItemDroppable"     "1"
+        "AbilityValues"
+        {
+            "str_bonus"                 "16"
+            "status_resist_pct"         "12"
+            "damage_bonus"              "12"
+        }
+    }
+    
+    "item_recipe_custom_sange"
+    {
+        "ItemRecipe"        "1"
+        "ItemCost"          "600"
+        "ItemResult"        "item_custom_sange"
+        "ItemRequirements"
+        {
+            "01"    "item_belt_of_strength;item_ogre_axe"
+        }
+    }
+}

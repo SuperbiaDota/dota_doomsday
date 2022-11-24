@@ -1,0 +1,94 @@
+//=================================================================================================================
+// Troll Warlord Talents
+//=================================================================================================================
+"DOTAAbilities"
+{
+	// +40% status resist in battle trance
+	"custom_troll_warlord_special_bonus_1"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_troll_warlord_battle_trance"
+			{
+				"status_resist"			"40"
+			}
+		}
+	}
+	
+	// allies in 900 range gain 40% of battle trance buff
+	"custom_troll_warlord_special_bonus_2"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_troll_warlord_battle_trance"
+			{
+				"aura_bonus"				"40"
+				"aura_radius"				"900"
+			}
+		}
+	}
+	
+	// fervor attack speed
+	"custom_troll_warlord_special_bonus_3"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_troll_warlord_fervor"
+			{
+				"attack_speed"			"8"
+			}
+		}
+	}
+	
+	// -3 whirling axes cooldown
+	"custom_troll_warlord_special_bonus_4"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_troll_warlord_whirling_axes_ranged"
+			{
+				"AbilityCooldown"			"-3"
+			}
+			"custom_troll_warlord_whirling_axes_melee"
+			{
+				"AbilityCooldown"			"-3"
+			}
+		}
+	}
+	
+	// increased bash chance
+	"custom_troll_warlord_special_bonus_5"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_troll_warlord_berserkers_rage"
+			{
+				"bash_chance"			"5"
+			}
+		}
+	}
+}
+
+//-------------------------------------------------------------------------------------------------------------
+// troll_warlord: Special Bonus Tooltips
+//-------------------------------------------------------------------------------------------------------------
+// "DOTA_Tooltip_ability_custom_troll_warlord_special_bonus_1"		"Talent 1"
+// "DOTA_Tooltip_ability_custom_troll_warlord_special_bonus_2"		"Talent 2"
+// "DOTA_Tooltip_ability_custom_troll_warlord_special_bonus_3"		"Talent 3"
+// "DOTA_Tooltip_ability_custom_troll_warlord_special_bonus_4"		"Talent 4"
+// "DOTA_Tooltip_ability_custom_troll_warlord_special_bonus_5"		"Talent 5"

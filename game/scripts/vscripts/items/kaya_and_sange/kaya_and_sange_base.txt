@@ -1,0 +1,34 @@
+"DOTAAbilities"
+{
+    "item_custom_kaya"
+    {
+        "BaseClass"         "item_lua"
+    
+        "ItemCost"          "2050"
+        "ItemKillable"      "1"
+        "ItemSellable"      "1"
+        "ItemPurchasable"   "1"
+        "ItemDroppable"     "1"
+        "AbilityValues"
+        {
+            "int_bonus"                 "16"
+            "spell_amp_pct"             "12"
+            "mana_regen"                "0.9"
+
+            "str_bonus"                 "16"
+            "status_resist_pct"         "18"
+            "damage_bonus"              "18"
+        }
+    }
+    
+    "item_recipe_custom_kaya"
+    {
+        "ItemRecipe"        "1"
+        "ItemCost"          "600"
+        "ItemResult"        "item_custom_kaya"
+        "ItemRequirements"
+        {
+            "01"    "item_custom_sange;item_custom_kaya"
+        }
+    }
+}

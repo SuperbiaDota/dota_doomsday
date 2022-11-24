@@ -1,0 +1,89 @@
+//=================================================================================================================
+// Huskar: Special Bonuses
+//=================================================================================================================
+"DOTAAbilities"
+{
+	// life break damage
+	"custom_huskar_special_bonus_1"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_huskar_life_break"
+			{
+				"damage_target_pct"		"20"
+			}
+		}
+	}
+	
+	// Talent 2
+	"custom_huskar_special_bonus_2"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_huskar_burning_spear"
+			{
+				"burn_damage"			"5"
+			}
+		}
+	}
+	
+	// Life Break Cooldown
+	"custom_huskar_special_bonus_3"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_huskar_life_break"
+			{
+				"AbilityCooldown"		"-4"
+			}
+		}
+	}
+	
+	// Inner fire shield
+	"custom_huskar_special_bonus_4"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_huskar_inner_fire"
+			{
+				"magic_sheild"			"250"
+			}
+		}
+	}
+	
+	// Inner Fire Cooldown
+	"custom_huskar_special_bonus_5"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_huskar_inner_fire"
+			{
+				"AbilityCooldown"		"-4"
+			}
+		}
+	}
+}
+
+//-------------------------------------------------------------------------------------------------------------
+// huskar: Special Bonus Tooltips
+//-------------------------------------------------------------------------------------------------------------
+// "DOTA_Tooltip_ability_custom_huskar_special_bonus_1"		"Talent 1"
+// "DOTA_Tooltip_ability_custom_huskar_special_bonus_2"		"Talent 2"
+// "DOTA_Tooltip_ability_custom_huskar_special_bonus_3"		"Talent 3"
+// "DOTA_Tooltip_ability_custom_huskar_special_bonus_4"		"Talent 4"
+// "DOTA_Tooltip_ability_custom_huskar_special_bonus_5"		"Talent 5"

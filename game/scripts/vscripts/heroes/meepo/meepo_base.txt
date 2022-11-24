@@ -1,0 +1,21 @@
+//=================================================================================================================
+// HERO: Meepo
+//=================================================================================================================
+"DOTAHeroes"
+{
+	"npc_dota_hero_meepo"
+	{
+		"Ability1"		     "custom_meepo_earthbind"
+		"Ability2"		     "custom_meepo_poof"
+		"Ability3"		     "custom_meepo_dig"
+		"Ability4"		     "generic_hidden"
+		"Ability5"		     "generic_hidden"
+		"Ability6"		     "custom_meepo_divided_we_stand"
+		     
+		"Ability10"		     "custom_meepo_special_bonus_1"
+		"Ability11"		     "custom_meepo_special_bonus_2"
+		"Ability12"		     "custom_meepo_special_bonus_3"
+		"Ability13"		     "custom_meepo_special_bonus_4"
+		"Ability14"		     "custom_meepo_special_bonus_5"
+	}
+}

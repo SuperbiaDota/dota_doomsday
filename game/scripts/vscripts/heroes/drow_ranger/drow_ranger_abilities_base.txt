@@ -1,0 +1,138 @@
+"DOTAAbilities"
+{
+	"custom_drow_ranger_frost_arrows"
+	{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/drow_ranger/abilities/custom_drow_ranger_frost_arrows"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "AbilitySound"                  "Hero_DrowRanger.FrostArrows"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+
+        "AbilityTextureName"            "drow_ranger_frost_arrows"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "625"
+        "AbilityCastPoint"              "0.0 0.0 0.0 0.0"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "0.0 0.0 0.0 0.0"
+        "AbilityDuration"               "1.5"
+
+        // Damage.
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityDamage"                 "0 0 0 0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "9 10 11 12"
+
+        "AbilityValues"
+        {
+            "ms_slow"                   "-15 -25 -35 -45"
+            "slow_duration"             "1.5"
+            "stack_duration"            "7"
+            "num_to_freeze"             "5"
+            "freeze_duration"           "1.25 1.5 1.75 2"
+        }
+	}
+	"custom_drow_ranger_gust"
+	{
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "FightRecapLevel"               "1"
+        "AbilitySound"                  "Hero_DrowRanger.Silence"
+
+        "AbilityTextureName"            "drow_ranger_wave_of_silence"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "900"
+        "AbilityCastPoint"              "0.25"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "16 15 14 13"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "70"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+                "wave_speed"                "2000.0"
+                "wave_width"                "250"
+                "silence_duration"          "3 4 5 6"
+                "knockback_distance_max"    "450"
+                "knockback_duration"        "0.6 0.7 0.8 0.9"
+                "knockback_height"          "0"
+                "wave_length"               "900"
+        }
+        "AbilityCastAnimation"      "ACT_DOTA_CAST_ABILITY_2"
+	}
+	"custom_drow_ranger_marksmanship_aura"
+	{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/drow_ranger/abilities/custom_drow_ranger_marksmanship_aura"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+        "AbilityTextureName"            "drow_ranger_precision_aura"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "as_per_agi"                "0.11 0.18 0.25 0.32"
+            "atk_range_bonus"           "50 75 100 125"
+            "radius"                    "800"
+            "disable_radius"            "400"
+        }
+	}
+	"custom_drow_ranger_piercing_shot"
+	{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/drow_ranger/abilities/custom_drow_ranger_piercing_shot"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityCastAnimation"          "ACT_DOTA_ATTACK_EVENT"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "FightRecapLevel"               "1"
+        "AbilityCastPoint"              "0.2"
+
+        "AbilityTextureName"            "drow_ranger_marksmanship"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "14 10 6"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "50 60 70"
+
+        "AbilityValues"
+        {
+            "distance_to_max"           "550"
+            "min_damage_pct"            "50"
+            "max_damage_pct"            "200"
+            "dmg_per_agi"               "0.8 1.0 1.2"
+            "range_multiplier"          "1.5"
+            "speed"                     "1200"
+            "radius"                    "120"
+            "vision_radius"             "150"
+            "vision_duration"           "2"
+        }
+	}
+}

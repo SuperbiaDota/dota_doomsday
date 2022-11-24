@@ -1,0 +1,33 @@
+"DOTAAbilities"
+{
+    "item_custom_octarine_core"
+    {
+        "BaseClass"         "item_lua"
+    
+        "ItemCost"          "5275"
+        "ItemKillable"      "1"
+        "ItemSellable"      "1"
+        "ItemPurchasable"   "1"
+        "ItemDroppable"     "1"
+        "AbilityValues"
+        {
+            "health_bonus"               "425"
+            "mana_bonus"                 "725"
+            "health_regen"             "6"
+            "mana_loss_reduction_pct"    "12"
+
+            "cooldown_reduction_pct"     "25"
+        }
+    }
+    
+    "item_recipe_custom_octarine_core"
+    {
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_custom_octarine_core"
+        "ItemRequirements"
+        {
+            "01"    "item_custom_mana_battery;item_soul_booster"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+"ValveResourceFormat"
+{
+	"BackgroundColor"	"#3C3C3C"
+	"GameSearchPaths"
+	{
+	}
+	"OpenDirectory"	"C:\Program Files (x86)\Steam\steamapps\common\dota 2 beta\game\dota_addons\dota1x6_decompile-master\panorama\styles\custom_game"
+	"SavedCameras"
+	{
+	}
+	"SaveDirectory"	""
+	"WindowHeight"	"571"
+	"WindowLeft"	"26"
+	"WindowState"	"2"
+	"WindowTop"	"26"
+	"WindowWidth"	"1117"
+}

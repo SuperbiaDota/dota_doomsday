@@ -1,0 +1,15 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/craft/hud_craft_buttons.css" />
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/craft/hud_craft_buttons.js" />
+	</scripts>
+
+	<snippets>
+	</snippets>
+
+	<Panel class="HudCraftButtonsMain" hittest="false">
+	</Panel>
+</root>

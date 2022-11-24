@@ -1,0 +1,80 @@
+//=================================================================================================================
+// Hero: Lifestealer
+//=================================================================================================================
+"DOTAAbilities"
+{
+	// Attack Infested Enemy Hero up to 3 Times
+	"custom_lifestealer_special_bonus_1"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_lifestealer_infest"
+			{
+				"attack_rate_enemy"			"3"
+			}
+		}
+	}
+
+	// +1s Rage Duration
+	"custom_lifestealer_special_bonus_2"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_lifestealer_rage"
+			{
+				"duration"				"1"
+			}
+		}
+	}
+
+	// +250 Open Wounds Cast Range
+	"custom_lifestealer_special_bonus_3"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_lifestealer_open_wounds"
+			{
+				"AbilityCastRange"		"250"
+			}
+		}
+	}
+
+	// attack speed
+	"custom_lifestealer_special_bonus_4"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"generic"
+			{
+				"attackspeed"			"40"
+			}
+		}
+	}
+
+	// -20s Infest Cooldown
+	"custom_lifestealer_special_bonus_5"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_lifestealer_infest"
+			{
+				"AbilityCooldown"			"-20"
+			}
+		}
+	}
+}

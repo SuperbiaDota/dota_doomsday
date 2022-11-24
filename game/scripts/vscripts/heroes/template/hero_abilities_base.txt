@@ -1,0 +1,19 @@
+"DOTAAbilities"
+{
+	"custom_hero_ability_1"
+	{
+
+	}
+	"custom_hero_ability_2"
+	{
+	
+	}
+	"custom_hero_ability_3"
+	{
+	
+	}
+	"custom_hero_ability_6"
+	{
+	
+	}
+}

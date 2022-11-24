@@ -1,0 +1,172 @@
+//=================================================================================================================
+// HERO: Arc Warden
+//=================================================================================================================
+"DOTAHeroes"
+{
+	"npc_dota_hero_heroName"
+	{
+		"Ability1"		"custom_arc_warden_flux"
+		"Ability2"		"custom_arc_warden_magnetic_field"
+		"Ability3"		"custom_arc_warden_spark_wraith"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"custom_arc_warden_tempest_double"
+
+		"Ability10"		"custom_arc_warden_special_bonus_1" // +50 Spark Wraith Damage
+		"Ability11"		"custom_arc_warden_special_bonus_2" // Consume your Tempest Double to Reincarnate at its Location
+		"Ability12"		"custom_arc_warden_special_bonus_3" // +250 Flux Cast Range
+		"Ability13"		"custom_arc_warden_special_bonus_4" // +250 Health
+		"Ability14"		"custom_arc_warden_special_bonus_5" // +75 Spark Wraith Vision Radius
+
+		"Ability25"		"custom_ability_craft"
+		"Ability26"		"custom_ability_burst"
+	}
+}
+
+"DOTAAbilities"
+{
+	"custom_arc_warden_flux"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_ArcWarden.Flux.Target"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"16.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"duration"						"6.0"
+				"damage_per_second"				"15 30 45 60"
+				"search_radius"					"225"
+				"think_interval"				"0.5"
+				"move_speed_slow_pct"			"14 21 28 35"
+				"AbilityCastRange"				"500 600 700 800"
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	"custom_arc_warden_magnetic_field"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_ArcWarden.MagneticField.Cast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_AW_MAGNETIC_FIELD"
+		"AbilityCastGestureSlot"		"DEFAULT"
+		"AbilityCastPoint"				"0.3"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"20"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50 70 90 110"
+		
+		// Cast Range
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"900"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"radius"					"300"
+			"duration"					"3.5 4.5 5.5 6.5"
+			"attack_speed_bonus"		"50 60 70 80"
+			"evasion_chance"			"100"
+		}
+	}
+
+	"custom_arc_warden_spark_wraith"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_ArcWarden.SparkWraith.Activate"
+
+		"AbilityCastRange"				"2000"
+		"AbilityCastPoint"				"0.3"
+
+		"HasScepterUpgrade"               "1"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"4.0 4.0 4.0 4.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"search_radius"								"375"
+			"activation_delay"							"2.0"
+			"duration"									"45"
+			"projectile_speed"							"400"
+			"spark_damage"								"100 180 260 340"
+			"think_interval"							"0.2"
+			"vision_radius"								"300"
+			"projectile_vision_duration"				"3.34"
+			"slow_duration"								"0.4 0.5 0.6 0.7"
+			"move_speed_slow_pct"						"100"
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+	"custom_hero_tempest_double"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Hero_ArcWarden.TempestDouble"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.15"
+		"AbilityCastAnimation"			"ACT_DOTA_OVERRIDE_ABILITY_4"
+		"AbilityCastGestureSlot"		"DEFAULT"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"180 160 140"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bounty_pct"				"50 40 30"
+		}
+	}
+}

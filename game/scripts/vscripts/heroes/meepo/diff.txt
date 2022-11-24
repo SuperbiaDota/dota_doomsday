@@ -1,0 +1,8 @@
+clones copy items from main hero (muted)
+clones copy base stats and talents
+meepo has reduced stats to compensate
+
+ransack - removed
+new ability: tunnel
+tunnel underground for 4 seconds then reappear at closest meepo to the target point. while underground, meepo receives 15% of healing from all other meepos
+shares cooldown with poof

@@ -1,0 +1,17 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+
+// #base "../vscripts/heroes/arc_warden/arc_warden_base.txt"
+#base "../vscripts/heroes/lifestealer/lifestealer_base.txt"
+// #base "../vscripts/heroes/zeus/zeus_base.txt"
+#base "../vscripts/heroes/huskar/huskar_base.txt"
+#base "../vscripts/heroes/rubick/rubick_base.txt"
+#base "../vscripts/heroes/omniknight/omniknight_base.txt"
+#base "../vscripts/heroes/meepo/meepo_base.txt"
+#base "../vscripts/heroes/drow_ranger/drow_ranger_base.txt"
+#base "../vscripts/heroes/tinker/tinker_base.txt"
+
+"DOTAHeroes"
+{
+}

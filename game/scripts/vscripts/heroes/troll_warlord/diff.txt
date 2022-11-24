@@ -1,0 +1,3 @@
+Berserker's Rage reverted to a bash
+10% chance at all levels
+20/30/40/50 dmg on proc

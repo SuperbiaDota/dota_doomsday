@@ -1,0 +1,21 @@
+.HUDTalentsMain
+{
+	width: 62px; 
+	height: 62px; 
+	vertical-align: bottom; 
+	margin-bottom: 26px; 
+	margin-left: 0px; 
+	margin-right: 4px; 
+	z-index: 3;
+}
+
+
+.LevelTalentRadialMenu
+{
+	width: 200px;
+	height: 200px;
+	/*opacity: 0.5; */
+	/* TODO: copy opacity of ping menu, maybe size too unless text is too small */
+}
+
+/* 0.309 * star_height * 0.5 = distance from center of star to base of point  0.382*/

@@ -1,0 +1,17 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/talent/hud_talents.css" />
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/talent/hud_talents.js" />
+	</scripts>
+
+	<snippets>
+	</snippets>
+
+	<Panel class="HUDTalentsMain" hittest="false">
+		<Image src="file://{resources}/images/custom_game/talent/dark_outline.png"/>
+		<Image src="file://{resources}/images/custom_game/talent/red_circle.png"/>
+	</Panel>
+</root>

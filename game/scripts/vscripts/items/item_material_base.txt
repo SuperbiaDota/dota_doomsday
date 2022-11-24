@@ -1,0 +1,482 @@
+"DOTAAbilities"
+{
+
+    // Materials
+    // ------------------------------------------------------------
+    "item_mat_stick"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_stick"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_eyeball"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_eyeball"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_flint" // brimstone?
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemKillable"      "1"
+        "ItemPurchasable"   "0"
+        "ItemDroppable"     "1"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+
+        "AbilityTextureName"    "item_mat_flint"
+    }
+    "item_mat_knife"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_knife"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_fang"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_fang"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_horn"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_horn"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_stone"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_stone"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_ectoplasm"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_ectoplasm"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_hide"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_hide"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_salt"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_salt"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+
+    "item_mat_leather"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_leather"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl1.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_scales"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemKillable"      "1"
+        "ItemPurchasable"   "0"
+        "ItemDroppable"     "1"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+
+        "AbilityTextureName"    "item_mat_scales"
+    }
+    "item_mat_bone"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_bone"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_feather"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_feather"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_leaves"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_leaves"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_fish"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_fish"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl0.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_direstone_heart"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_direstone_heart"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl3.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_radiant_ore"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_radiant_ore"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl2.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+    "item_mat_fusion_core"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"         "item_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"    "item_mat_fusion_core"
+        "Model"                 "models/props_gameplay/neutral_box_model.vmdl"
+        "Effect"                "particles/items5_fx/neutral_treasurebox_rays_lvl4.vpcf"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemKillable"      "1"
+        "ItemSellable"      "0"
+        "ItemShareability"  "ITEM_FULLY_SHAREABLE"
+    }
+
+    // Recipes
+    // ------------------------------------------------------------
+    "item_recipe_mat_leather"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_mat_leather"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_salt;item_mat_hide"
+        }
+    }
+
+    "item_recipe_mat_plant_paste"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_mat_plant_paste"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_stone;item_mat_leaves"
+        }
+    }
+
+    "item_recipe_mat_film"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_mat_plant_paste"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_plant_paste;item_mat_fang"
+        }
+    }
+
+    "item_recipe_mat_soul_harvester"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_mat_soul_harvester"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_film;item_mat_glass;item_mat_box"
+        }
+    }
+
+    "item_recipe_mat_cooked_meat"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_food_cooked_meat"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_fire;item_mat_raw_meat"
+        }
+    }
+
+    "item_recipe_mat_sashimi"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_food_sashimi"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_knife;item_mat_fish"
+        }
+    }
+
+    "item_recipe_food_chopped_veggies"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_mat_chopped_veggies"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_knife;item_mat_leaves"
+        }
+    }
+
+    "item_recipe_food_salad"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_mat_salad"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_chopped_veggies;item_mat_ectoplasm"
+        }
+    }
+
+    "item_recipe_mat_fusion_core"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_mat_fusion_core"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_direstone_heart;item_mat_radiant_ore"
+        }
+    }
+
+    "item_recipe_custom_black_king_bar"
+    {
+        "BaseClass"         "item_datadriven"
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_custom_black_king_bar"
+        "ItemPurchasable"   "0"
+        "ItemRequirements"
+        {
+            "01"            "item_mat_fusion_core;item_custom_black_king_bar"
+        }
+    }
+}

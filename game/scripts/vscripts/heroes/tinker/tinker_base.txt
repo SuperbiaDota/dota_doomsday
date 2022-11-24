@@ -1,0 +1,21 @@
+//=================================================================================================================
+// HERO: tinker
+//=================================================================================================================
+"DOTAHeroes"
+{
+	"npc_dota_hero_tinker"
+	{
+		"Ability1"		"custom_tinker_laser"
+		"Ability2"		"custom_tinker_heat_seeking_missile"
+		"Ability3"		"custom_tinker_mega_death_ray"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"custom_tinker_rearm"
+		
+		"Ability10"		"custom_tinker_special_bonus_1" // Talent 1
+		"Ability11"		"custom_tinker_special_bonus_2" // Talent 2
+		"Ability12"		"custom_tinker_special_bonus_3" // Talent 3
+		"Ability13"		"custom_tinker_special_bonus_4" // Talent 4
+		"Ability14"		"custom_tinker_special_bonus_5" // Talent 5
+	}
+}

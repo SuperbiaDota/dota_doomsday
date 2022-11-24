@@ -1,0 +1,66 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Silver Edge
+    //=================================================================================================================
+    "item_custom_silver_edge"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/silver_edge/item_custom_silver_edge"
+
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "FightRecapLevel"               "1"
+
+        // Stats        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "20.0"
+        "AbilitySharedCooldown"         "shadow_blade"
+
+        "AbilityTextureName"            "item_silver_edge"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "75"
+        "ItemCost"                      "5450"
+        "ItemShopTags"                  "damage;attack_speed;movespeed;hard_to_tag"
+        "ItemQuality"                   "epic"
+        "ItemAliases"                   "sb;invis;shadow blade"
+        //"ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        // TODO: custom crafting popup
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "bonus_damage"                  "52"
+            "bonus_attack_speed"            "35"
+            "windwalk_duration"             "14.0"
+            "windwalk_movement_speed"       "25"
+            "windwalk_fade_time"            "0.3"
+            "windwalk_bonus_damage"       "175"
+            "backstab_duration"             "4"
+            "backstab_crit"                 "130"
+            "crit_chance"                   "30"
+            "crit_multiplier"               "160"
+        }
+    }
+    "item_recipe_custom_silver_edge"
+    {
+        "BaseClass"                     "NULL"
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "0"
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_custom_silver_edge"
+        "ItemRequirements"
+        {
+            "01"                        "item_invis_sword;item_lesser_crit"
+        }
+    }
+}

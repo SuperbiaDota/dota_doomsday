@@ -1,0 +1,21 @@
+//=================================================================================================================
+// HERO: heroName
+//=================================================================================================================
+"DOTAHeroes"
+{
+	"npc_dota_hero_huskar"
+	{
+		"Ability1"		"custom_huskar_inner_fire"
+		"Ability2"		"custom_huskar_burning_spear"
+		"Ability3"		"custom_huskar_berserkers_blood"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"custom_huskar_life_break"
+		
+		"Ability10"		"custom_huskar_special_bonus_1" // Talent 1
+		"Ability11"		"custom_huskar_special_bonus_2" // Talent 2
+		"Ability12"		"custom_huskar_special_bonus_3" // Talent 3
+		"Ability13"		"custom_huskar_special_bonus_4" // Talent 4
+		"Ability14"		"custom_huskar_special_bonus_5" // Talent 5
+	}
+}

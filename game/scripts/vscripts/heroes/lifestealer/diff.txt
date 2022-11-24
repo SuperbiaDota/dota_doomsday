@@ -1,0 +1,17 @@
+
+rage mana cost decreased to 75 at all levels - because lifestealer has 3 spells again
+restored old feast
+infest can target enemy heroes and lasts 3/4/5 secondsz
+
+fix:
+ms change doesn't show on client
+infesting aggro'd creep doesn't let me control them
+infest says some weird stuff in console
+ls gets stuck when leaving infest target
+cant control lane creeps
+
+TODO:
+implement selection library
+https://github.com/MNoya/DotaCraft/blob/master/game/dota_addons/dotacraft/scripts/vscripts/libraries/selection.lua
+when infest is cast: select neutral
+when consume is cast: select lifestealer

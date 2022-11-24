@@ -1,0 +1,31 @@
+"DOTAAbilities"
+{
+    "item_custom_arcane_blink"
+    {
+        "BaseClass"         "item_lua"
+    
+        "ItemCost"          "2050"
+        "ItemKillable"      "1"
+        "ItemSellable"      "1"
+        "ItemPurchasable"   "1"
+        "ItemDroppable"     "1"
+        "AbilityValues"
+        {
+            "int_bonus"                 "25"
+            "blink_range"               "1600"
+            "penalty"                   "240"
+            "cdr_per_cast"              "1"
+        }
+    }
+    
+    "item_recipe_custom_arcane_blink"
+    {
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_custom_arcane_blink"
+        "ItemRequirements"
+        {
+            "01"    "item_blink;item_mystic_staff"
+        }
+    }
+}

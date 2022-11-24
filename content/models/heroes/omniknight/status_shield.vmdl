@@ -1,0 +1,146 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_name = "models/props_gameplay/status_shield.vmdl"
+	m_modelInfo = 
+	{
+		m_nFlags = 8389632
+		m_vHullMin = 
+		[
+			0.000000,
+			0.000000,
+			0.000000,
+		]
+		m_vHullMax = 
+		[
+			0.000000,
+			0.000000,
+			0.000000,
+		]
+		m_vViewMin = 
+		[
+			0.000000,
+			0.000000,
+			0.000000,
+		]
+		m_vViewMax = 
+		[
+			0.000000,
+			0.000000,
+			0.000000,
+		]
+		m_flMass = 0.000000
+		m_vEyePosition = 
+		[
+			0.000000,
+			0.000000,
+			0.000000,
+		]
+		m_flMaxEyeDeflection = 0.000000
+		m_sSurfaceProperty = ""
+		m_keyValueText = ""
+	}
+	m_ExtParts = 
+	[
+	]
+	m_refMeshes = 
+	[
+		resource:"",
+	]
+	m_refMeshGroupMasks = 
+	[
+		18446744073709551615,
+	]
+	m_refPhysGroupMasks = 
+	[
+	]
+	m_refLODGroupMasks = 
+	[
+		255,
+	]
+	m_lodGroupSwitchDistances = 
+	[
+	]
+	m_refPhysicsData = 
+	[
+	]
+	m_refPhysicsHitboxData = 
+	[
+	]
+	m_refAnimGroups = 
+	[
+	]
+	m_refSequenceGroups = 
+	[
+	]
+	m_meshGroups = 
+	[
+	]
+	m_materialGroups = 
+	[
+	]
+	m_nDefaultMeshGroupMask = 18446744073709551615
+	m_modelSkeleton = 
+	{
+		m_boneName = 
+		[
+			"status_shield_model",
+		]
+		m_nParent = 
+		[
+			-1,
+		]
+		m_boneSphere = 
+		[
+			27.735365,
+		]
+		m_nFlag = 
+		[
+			261504,
+		]
+		m_bonePosParent = 
+		[
+			
+			[
+				-0.000000,
+				0.000000,
+				0.000000,
+			],
+		]
+		m_boneRotParent = 
+		[
+			
+			[
+				0.000000,
+				0.000000,
+				0.707107,
+				0.707107,
+			],
+		]
+		m_boneScaleParent = 
+		[
+			1.000000,
+		]
+	}
+	m_remappingTable = 
+	[
+		0,
+		0,
+	]
+	m_remappingTableStarts = 
+	[
+		0,
+	]
+	m_boneFlexDrivers = 
+	[
+	]
+	m_pModelConfigList = null
+	m_BodyGroupsHiddenInTools = 
+	[
+	]
+	m_refAnimIncludeModels = 
+	[
+	]
+	m_AnimatedMaterialAttributes = 
+	[
+	]
+}

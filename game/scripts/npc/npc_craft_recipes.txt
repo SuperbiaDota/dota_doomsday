@@ -1,0 +1,26 @@
+"craft_recipes"
+{
+    "1.0"
+    {
+        "item_mat_fusion_core"
+        {
+            "item_mat_direstone_heart"  "1"
+            "item_mat_radiant_ore"      "1"
+        }
+        "item_mat_leather"
+        {
+            "item_mat_salt"             "1"
+            "item_mat_hide"             "1"
+        }
+    }
+    "2.0"
+    {
+        "item_custom_silver_edge"
+        {
+            "item_invis_sword"          "1"
+            "item_lesser_crit"          "1"
+        }
+    }
+}
+
+// TODO: crafting that doesn't require consumption of materials

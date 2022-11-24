@@ -1,0 +1,230 @@
+BUGS
+random blood particle effects?
+
+SYSTEM MECHANICS
+
+str: now gives +0.33 bonus damage
+
+new ability: mana burst - costs percentage of max mana
+
+0.3 second startup, gain damage resistance and apply slow aura while channeling
+at the end of channel become disarmed, muted, silenced
+
+no general cast range modification
+reasons:
+some spells have unusual behavior with cast range (abilities that gain width the farther they travel)
+lots of spells dont work with cast range
+
+dawnbreaker starbreaker
+mars gods rebuke
+primal beast onslaught
+phoenix icarus dive
+drow multishot
+hoodwink sharpshooter
+invoker meatball (affects the meatball travel distance?)
+monkey king boundless strike
+vector targeting doesn't increase the range of the second cast (this makes sense to me)
+
+change all abilities to work with status resistance
+status resistance updates dynamically
+DoT damage is reduced by status resistance
+
+movement does not require turning (is this good or not?)
+
+most roots deal small damage and issue a stop command when applied
+
+remove:
+break
+general cast range modification
+lifesteal amplification
+regen amplification
+spell lifesteal amplification
+immediate cast point
+cast while channeling
+
+limited availability:
+spell amp (kaya, doesnt stack)
+spell lifesteal (bloodstone active, costs charges)
+percentage-based spell damage
+heal restoration modification
+
+TODO:
+send craft duration to client
+create events for selection, update craft ui depending on what unit is selected
+dont let players craft items not owned by them
+highlight craft components on hover
+radial talents pentagram menu
+make burst cost percentage of max mana, if cost can't be afforded then lose all mana and don't apply aura slow
+do towers not have backdoor?
+material drops have peusdo random per creep camp (and maybe so theres less duplicate drops?)
+teams arent named radiant and dire for some reason
+outgoing spell amp is additive, should be multiplicative
+normal casting autocast attack modifiers aggro creeps
+
+--------------------------------------------------------------------------
+
+SETTINGS
+
+TODO:
+auto-repeat attack move
+force ground-targeted
+only target heroes?
+add new modifier keys
+auto attack on/off in scoreboard
+option for right click doesnt attack
+fix select ally hero hotkeys; rearrange scoreboard
+drag item to ground now drops item directly at hero's feet
+
+--------------------------------------------------------------------------
+
+HERO CONCEPTS
+
+meepo: clones equip all items used by main meepo but they are muted
+
+new hero: gunslinger (adds some cool mechanics from league that i think could work in dota)
+
+Innate - Reload
+gunslinger loads 6 bullets into his revolver
+
+Q - Bull's eye
+gunslinger shoots in a line, connecting with the first enemy
+can pierce a limited number of enemies
+deals physical damage as a multiplier of gunslinger's attack damage and deals bonus damage based on the target's missing health
+Must have revolver equipped to cast, range is equal to double gunslinger's attack range
+
+W - ?
+Autocast fires gunslinger's revolver, becoming ranged and gaining bonus damage but significantly increasing his BAT. The less bullets there are in the chamber the more damage is dealt
+
+E - Combat roll
+Gunslinger rolls in the target direction. Does not require turning. Gains phase but cannot pass over terrain. Disjoints projectiles
+
+R - Bullet time
+Passive: When gunslinger gets a kill he chambers a bullet and refreshes the cooldowns of his basic abilities
+can be cast to equip two guns, increasing gunslinger's clip size to 12, reducing his BAT, and allowing him to attack without turning
+bullet time ends if gunslinger reloads or runs out of bullets
+
+Talents:
+1. Bull's eye gains two charges for the duration of bullet time
+2. bonus ace in the hole damage
+3. become invisible for the duration of combat roll
+4. Casting bullet time procs the passive
+5. Bonus revolver attack range
+
+--------------------------------------------------------------------------
+
+GOLD
+
+remove stack gold
+replace assist gold
+
+--------------------------------------------------------------------------
+
+ITEMS
+
+removed:
+voodoo mask
+aether lens
+spirit vessel
+
+silver edge - 
+uses crystallis, shadow blade, and crafting items
+gives increased melee attack range and applies guaranteed crit debuff
+
+bloodstone - 
+built with perserverance + soul booster
+starts with zero charges, gain increased spell amp per charge
+activate to gain spell lifesteal at the cost of charges
+dying also loses charges
+
+kaya - mana cost reduction
+
+octarine - 
+built with kaya and soul booster
+no longer grants increased cast range, still grants +25% cdr
+
+ethereal blade -
+now uses reaver, eaglesong, or mystic staff + ghost scepter + recipe (based on your primary attribute)
+gives +40 primary attribute
+deals damage based on the caster's primary attribute
+
+aghanim's scepter - 
+on purchase gives a free skillpoint that must be used to choose a talent
+cannot be sold but can be consumed as a permanent buff at no extra cost (loses stats)
+
+BKB - 
+has 8 charges, can be repaired with a fusion core
+
+Bloodthorn -
+veil + orchid + crafting items, AOE silence and magic dmg reduction
+
+solar crest - 
+medallion + crafting items
+
+aeon disk - 
+empowers burst
+
+gleipnir -
+atos + maelstrom + crafting items
+
+revenant's brooth -
+witch blade + crafting items
+
+guardian greaves - 
+mek + arcanes + crafting items
+
+arcane blink - 
+blink + mystic staff + crafting items
+
+helm of the overlord - 
+vlads + helm dom + crafting items
+
+wind waker -
+euls + mystic staff + crafting items
+
+abyssal - 
+skull basher + vanguard + crafting items
+
+aquila - 
+crafted item? what about falcon blade?
+
+fallen sky - 
+blink + meteor hammer + crafting items
+
+trickster cloak - 
+glimmer cape + crafting items
+
+timeless relic -
+applies negative status resistance
+
+cloak of flames - 
+radiance + hood + crafting items
+
+nether shawl - 
+hood + crafting items
+
+book of shadows -
+glimmer cape + crafting items
+
+necronomicon - 
+no true sight
+
+book of the dead -
+necronomicon + crafting items
+
+enchanted quiver - 
+dragon lance + witch blade + crafting items
+
+stygian desolator - 
+deso + crafting items
+hero kills grant permanent bonus damage (tied to item)
+
+ex machina - 
+refresher + platemail + crafting items
+shorter cd but only resets item cds
+
+paladin sword - 
+morbid mask + crafting items
+
+crafting materials:
+bloodroot branch
+riftshadow crystal

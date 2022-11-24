@@ -1,0 +1,2 @@
+fix:
+moves zeus in the direction hes facing instead of the direction he is currently moving

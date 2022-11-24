@@ -1,0 +1,57 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // itemName
+    //=================================================================================================================
+    "item_custom_itemName"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/itemName/item_custom_itemName"
+
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "FightRecapLevel"               "1"
+
+        // Stats        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "75"
+        "AbilityCooldown"               "0"
+        "AbilitySharedCooldown"         ""
+
+
+        "AbilityTextureName"            "item_itemName"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "5450"
+        "ItemShopTags"                  "damage;attack_speed;movespeed;hard_to_tag"
+        "ItemQuality"                   "epic"
+        "ItemAliases"                   "alias;alias"
+        //"ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        // TODO: custom crafting popup
+        "ShouldBeSuggested"             "1"
+        
+        // Special  
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+        }
+    }
+    "item_recipe_custom_itemName"
+    {
+        "BaseClass"                     "item_datadriven" // set to NULL to disable combining
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "0"
+        
+        // Recipe
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemRecipe"                    "1"
+        "ItemResult"                    "item_custom_iteName"
+        "ItemRequirements"
+        {
+            "01"                        "component;component"
+        }
+    }
+}

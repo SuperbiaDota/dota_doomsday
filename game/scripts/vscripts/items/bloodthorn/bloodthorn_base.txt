@@ -1,0 +1,40 @@
+"DOTAAbilities"
+{
+    "item_custom_bloodthorn"
+    {
+        "BaseClass"         "item_lua"
+    
+        "ItemCost"          "5000"
+        "ItemKillable"      "1"
+        "ItemSellable"      "1"
+        "ItemPurchasable"   "1"
+        "ItemDroppable"     "1"
+        "AbilityValues"
+        {
+            "damage_bonus"              "30"
+            "attack_speed"              "40"
+            "mana_regen_pct"            "150"
+
+            "int_bonus"                 "4"
+            "str_bonus"                 "4"
+            "agi_bonus"                 "4"
+
+            "radius"                    "600"
+            "damage_amp_pct"            "30"
+            "silence_duration"          "5"            
+            "magic_weakness_pct"        "18"
+            "weakness_duration"         "16"
+        }
+    }
+    
+    "item_recipe_custom_bloodthorn"
+    {
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_custom_bloodthorn"
+        "ItemRequirements"
+        {
+            "01"    "item_custom_veil_of_discord;item_custom_orchid"
+        }
+    }
+}

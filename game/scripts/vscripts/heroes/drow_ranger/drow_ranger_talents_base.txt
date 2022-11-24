@@ -1,0 +1,89 @@
+//=================================================================================================================
+// drow_ranger: Special Bonuses
+//=================================================================================================================
+"DOTAAbilities"
+{
+	// Rapid fire
+	"custom_drow_ranger_special_bonus_1"
+	{
+        "BaseClass"                     "special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_drow_ranger_piercing_shot"
+			{
+				"AbilityCooldown"			"-2"
+			}
+		}
+	}
+	
+	// Fast Reflexes
+	"custom_drow_ranger_special_bonus_2"
+	{
+        "BaseClass"                     "special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"drow_ranger_wave_of_silence"
+			{
+				"AbilityCastPoint"			"-0.25"
+			}
+		}
+	}
+	
+	// permafrost
+	"custom_drow_ranger_special_bonus_3"
+	{
+        "BaseClass"                     "special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_drow_ranger_frost_arrows"    
+            {
+                "freeze_duration"           "1.5"
+            }
+		}
+	}
+	
+	// keener senses
+	"custom_drow_ranger_special_bonus_4"
+	{
+        "BaseClass"                     "special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_drow_ranger_marksmanship_aura"
+            {
+                "atk_range_bonus"           "125"
+            }
+		}
+	}
+	
+	// Heavy Arrows
+	"custom_drow_ranger_special_bonus_5"
+	{
+        "BaseClass"                     "special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+            "custom_drow_ranger_marksmanship_aura"
+            {
+                "as_per_agi"           "0.15"
+            }
+		}
+	}
+}
+
+//-------------------------------------------------------------------------------------------------------------
+// drow_ranger: Special Bonus Tooltips
+//-------------------------------------------------------------------------------------------------------------
+// "DOTA_Tooltip_ability_custom_drow_ranger_special_bonus_1"		"Talent 1"
+// "DOTA_Tooltip_ability_custom_drow_ranger_special_bonus_2"		"Talent 2"
+// "DOTA_Tooltip_ability_custom_drow_ranger_special_bonus_3"		"Talent 3"
+// "DOTA_Tooltip_ability_custom_drow_ranger_special_bonus_4"		"Talent 4"
+// "DOTA_Tooltip_ability_custom_drow_ranger_special_bonus_5"		"Talent 5"

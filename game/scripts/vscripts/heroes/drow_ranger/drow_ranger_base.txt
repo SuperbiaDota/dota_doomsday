@@ -1,0 +1,23 @@
+//=================================================================================================================
+// HERO: Drow Ranger
+//=================================================================================================================
+"DOTAHeroes"
+{
+	"npc_dota_hero_drow_ranger"
+	{
+		"Ability1"		"custom_drow_ranger_frost_arrows"
+		//"Ability2"		"custom_drow_ranger_gust"
+		"Ability3"		"custom_drow_ranger_marksmanship_aura"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"custom_drow_ranger_piercing_shot"
+		
+		"Ability10"		"custom_drow_ranger_special_bonus_1" // Talent 1
+		"Ability11"		"custom_drow_ranger_special_bonus_2" // Talent 2
+		"Ability12"		"custom_drow_ranger_special_bonus_3" // Talent 3
+		"Ability13"		"custom_drow_ranger_special_bonus_4" // Talent 4
+		"Ability14"		"custom_drow_ranger_special_bonus_5" // Talent 5
+
+        "AttackRange"                "550"
+	}
+}

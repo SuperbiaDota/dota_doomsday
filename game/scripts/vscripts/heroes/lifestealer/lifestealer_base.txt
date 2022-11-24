@@ -1,0 +1,21 @@
+//=================================================================================================================
+// HERO: Lifestealer
+//=================================================================================================================
+"DOTAHeroes"
+{
+	"npc_dota_hero_life_stealer"
+	{
+		"Ability1"			"custom_lifestealer_rage"
+		"Ability2"			"custom_lifestealer_open_wounds"
+		"Ability3"			"custom_lifestealer_feast"
+		"Ability4"			"generic_hidden"
+		"Ability5"			"generic_hidden"
+		"Ability6"			"custom_lifestealer_infest"
+
+		"Ability10"			"custom_lifestealer_special_bonus_1" // Talent 1
+		"Ability11"			"custom_lifestealer_special_bonus_2" // Talent 2
+		"Ability12"			"custom_lifestealer_special_bonus_3" // Talent 3
+		"Ability13"			"custom_lifestealer_special_bonus_4" // Talent 4
+		"Ability14"			"custom_lifestealer_special_bonus_5" // Talent 5
+	}
+}

@@ -1,0 +1,10 @@
+#base "../vscripts/heroes/lifestealer/lifestealer_talents_base.txt"
+#base "../vscripts/heroes/huskar/huskar_talents_base.txt"
+#base "../vscripts/heroes/omniknight/omniknight_talents_base.txt"
+#base "../vscripts/heroes/meepo/meepo_talents_base.txt"
+#base "../vscripts/heroes/drow_ranger/drow_ranger_talents_base.txt"
+
+"DOTAAbilities"
+{
+	
+}

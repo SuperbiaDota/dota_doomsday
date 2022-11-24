@@ -1,0 +1,66 @@
+#base "../vscripts/items/item_material_base.txt"
+#base "../vscripts/items/item_edit_kv.txt"
+#base "../vscripts/items/desolator_2/desolator_2_base.txt"
+#base "../vscripts/items/silver_edge/silver_edge_base.txt"
+#base "../vscripts/items/ethereal_blade/ethereal_blade_base.txt"
+#base "../vscripts/items/gungnir/gungnir_base.txt"
+#base "../vscripts/items/tp_scroll/tp_scroll_base.txt"
+
+"DOTAAbilities"
+{
+
+    
+	// Consumables
+	// ------------------------------------
+	"item_custom_glyph"
+	{
+		"BaseClass"			"item_lua"
+
+		"ItemKillable" 		"1"
+		"ItemPurchasable" 	"0"
+		"ItemDroppable" 	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	}
+	"item_custom_scan"
+	{
+		"BaseClass"			"item_lua"
+
+		"ItemKillable" 		"1"
+		"ItemPurchasable" 	"0"
+		"ItemDroppable" 	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	}
+	"item_custom_salad"
+	{
+		"BaseClass"			"item_lua"
+
+		"ItemKillable" 		"1"
+		"ItemPurchasable" 	"0"
+		"ItemDroppable" 	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	}
+	"item_custom_meat"
+	{
+
+	}
+	"item_custom_cooked_meat"
+	{
+
+	}
+	"item_custom_hearty_meal"
+	{
+
+	}
+	"item_custom_fish"
+	{
+
+	}
+	"item_custom_cooked_fish"
+	{
+
+	}
+	"item_custom_sashimi"
+	{
+
+	}
+}

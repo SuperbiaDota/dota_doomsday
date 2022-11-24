@@ -1,0 +1,84 @@
+//=================================================================================================================
+// Arc Warden: Special Bonuses
+//=================================================================================================================
+"DOTAAbilities"
+{
+	// -0.75s Spark Wraith Cooldown
+	"custom_arc_warden_special_bonus_1"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_arc_warden_spark_wraith"
+			{
+				"AbilityCooldown"			"-0.75"
+			}
+		}
+	}
+
+	// Replace your Tempest Double on Death
+	"custom_arc_warden_special_bonus_2"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ScriptFile"					"modifiers/custom_modifier_arc_warden_reincarnate.lua"
+	}
+
+	// +250 Flux Cast Range
+	"custom_arc_warden_special_bonus_3"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_arc_warden_flux"
+			{
+				"AbilityCastRange"			"250"
+			}
+		}
+	}
+
+	// +250 Health
+	"custom_arc_warden_special_bonus_4"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"generic"
+			{
+				"health"					"250"
+			}
+		}
+	}
+
+
+	// +75 Spark Wraith Vision Radius
+	"custom_arc_warden_special_bonus_5"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_arc_warden_spark_wraith"
+			{
+				"vision_radius"				"75"
+			}
+		}
+	}
+}
+
+//-------------------------------------------------------------------------------------------------------------
+// Hero: Special Bonus Tooltips
+//-------------------------------------------------------------------------------------------------------------
+"DOTA_Tooltip_ability_custom_hero_special_bonus_1"		"-0.75s Spark Wraith Cooldown"
+"DOTA_Tooltip_ability_custom_hero_special_bonus_2"		"Replace your Tempest Double on Death"
+"DOTA_Tooltip_ability_custom_hero_special_bonus_3"		"+250 Flux Cast Range"
+"DOTA_Tooltip_ability_custom_hero_special_bonus_4"		"+250 Health"
+"DOTA_Tooltip_ability_custom_hero_special_bonus_5"		"+75 Spark Wraith Vision Radius"

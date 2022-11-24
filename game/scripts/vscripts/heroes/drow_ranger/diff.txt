@@ -1,0 +1,11 @@
+bugs:
+
+diff:
+frost arrows now freeze after 5 consecutive attacks on the same enemy
+
+marksmanship is now a basic aura ability, granting bonus attack range and attack speed to allied ranged heroes and being disabled if an enemy is within 400 units
+marksmanship grants agility instead of attack speed to drow herself
+
+drow's ultimate is piercing shot, a projectile that travels for 1.5x her attack range and is destroyed upon the first enemy hit
+piercing shot deals damage the farther the target is away from drow and deals bonus damage based on her agility
+piercing shot ignores base armor against frozen enemies

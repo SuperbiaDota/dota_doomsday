@@ -1,0 +1,30 @@
+"DOTAAbilities"
+{
+    "item_custom_mana_battery"
+    {
+        "BaseClass"         "item_lua"
+    
+        "ItemCost"          "2275"
+        "ItemKillable"      "1"
+        "ItemSellable"      "1"
+        "ItemPurchasable"   "1"
+        "ItemDroppable"     "1"
+        "AbilityValues"
+        {
+            "mana_bonus"                 "300"
+            "health_regen"               "6"
+            "mana_loss_reduction_pct"    "12"
+        }
+    }
+    
+    "item_recipe_custom_mana_battery"
+    {
+        "ItemRecipe"        "1"
+        "ItemCost"          "650"
+        "ItemResult"        "item_custom_mana_battery"
+        "ItemRequirements"
+        {
+            "01"    "item_energy_booster;item_ring_of_health"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+inner fire pushes enemies to the edge of the radius instead of 400
+radius equals burning spear attack range
+inner fire grants a magic barrier
+
+berserkers blood grants attack speed and health restoration manipulation
+at high health the health restoration is negative
+
+life break grants healing based on 1.5x the damage dealt
+costs 50 mana, cast range scales
+grants spell immunity for the entirety of the jump
+
+TODO: burning spears draw aggro

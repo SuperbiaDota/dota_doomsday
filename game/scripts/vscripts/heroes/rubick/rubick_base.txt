@@ -1,0 +1,21 @@
+//=================================================================================================================
+// HERO: rubick
+//=================================================================================================================
+"DOTAHeroes"
+{
+	"npc_dota_hero_rubick"
+	{
+		//"Ability1"		"custom_hero_ability_1"
+		//"Ability2"		"custom_hero_ability_2"
+		"Ability3"		"custom_rubick_null_field"
+		"Ability4"		"rubick_empty1"
+		"Ability5"		"rubick_empty2"
+		//"Ability6"		"custom_hero_ability_6"
+		
+		//"Ability10"		"custom_hero_special_bonus_unique_1" // Talent 1
+		//"Ability11"		"custom_hero_special_bonus_unique_2" // Talent 2
+		//"Ability12"		"custom_hero_special_bonus_unique_3" // Talent 3
+		//"Ability13"		"custom_hero_special_bonus_unique_4" // Talent 4
+		//"Ability14"		"custom_hero_special_bonus_unique_5" // Talent 5
+	}
+}

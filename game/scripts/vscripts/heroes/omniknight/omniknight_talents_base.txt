@@ -1,0 +1,85 @@
+//=================================================================================================================
+// omniknight: Special Bonuses
+//=================================================================================================================
+"DOTAAbilities"
+{
+	// Guardian Angel Block charges
+	"custom_omniknight_special_bonus_1"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityValues"
+        {
+            "custom_omniknight_guardian_angel"
+            {
+                "block"         "2"
+            }
+        }
+	}
+	
+	// +Purification Heal/Damage
+	"custom_omniknight_special_bonus_2"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_omniknight_purification"
+			{
+				"heal"			"100"
+                "damage"        "100"
+			}
+		}
+	}
+	
+	// Degen Aura slow
+	"custom_omniknight_special_bonus_3"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_omniknight_degen_aura"
+            {
+                "ms_slow"           "20"
+            }
+		}
+	}
+	
+	// Degen Aura build up speed
+	"custom_omniknight_special_bonus_4"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_omniknight_degen_aura"
+            {
+                "time_to_max"           "-2"
+            }
+		}
+	}
+	
+	// Heavenly Grace Cooldown
+	"custom_omniknight_special_bonus_5"
+	{
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_omniknight_heavenly_grace"
+            {
+                "AbilityCooldown"      "-3"
+            }
+		}
+	}
+}
+
+//-------------------------------------------------------------------------------------------------------------
+// omniknight: Special Bonus Tooltips
+//-------------------------------------------------------------------------------------------------------------
+// "DOTA_Tooltip_ability_custom_omniknight_special_bonus_1"		"Talent 1"
+// "DOTA_Tooltip_ability_custom_omniknight_special_bonus_2"		"Talent 2"
+// "DOTA_Tooltip_ability_custom_omniknight_special_bonus_3"		"Talent 3"
+// "DOTA_Tooltip_ability_custom_omniknight_special_bonus_4"		"Talent 4"
+// "DOTA_Tooltip_ability_custom_omniknight_special_bonus_5"		"Talent 5"

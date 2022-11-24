@@ -1,0 +1,51 @@
+"DOTAAbilities"
+{
+    // stygian desolator
+	"item_custom_desolator_2"
+	{
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_lua"
+        "ScriptFile"                    "items/desolator_2/item_custom_desolator_2"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        // Display
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityTextureName"            "item_desolator_2"
+
+        // Item Info
+        //-------------------------------------------------------------------------------------------------------------
+        "ItemCost"                      "3500"
+        "ItemShopTags"                  "damage;unique"
+        "ItemPurchasable"               "0"
+        "ItemQuality"                   "artifact"
+        "ItemAliases"                   "stygian"
+        //"ItemDeclarations"            "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+        // TODO: custom popup when player crafts an item
+        "SpellDispellableType"          "SPELL_DISPELLABLE_YES"
+        "ShouldBeSuggested"             "1"
+
+        "ItemInitialCharges"            "0"
+        "ItemDisplayCharges"            "1"
+
+        "AbilityValues"
+        {
+            "damage_bonus"              "50"
+            "armor_corruption"          "-8"
+            "corruption_duration"       "7"
+            "damage_per_kill"           "2"
+            "damage_per_assist"         "1"
+        }
+	}
+
+    "item_recipe_custom_desolator_2"
+    {
+        "ItemRecipe"        "1"
+        "ItemCost"          "0"
+        "ItemResult"        "item_custom_desolator"
+        "ItemRequirements"
+        {
+            "01"    "item_desolator;item_mat_soul_harvester"
+        }
+    }
+}

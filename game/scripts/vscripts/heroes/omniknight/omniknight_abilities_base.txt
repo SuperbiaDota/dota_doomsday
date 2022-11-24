@@ -1,0 +1,159 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Omniknight: Purification
+    //=================================================================================================================
+	"custom_omniknight_purification"
+    {
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/omniknight/abilities/custom_omniknight_purification"
+        "AbilityTextureName"            "omniknight_purification"
+        "FightRecapLevel"               "1"
+        "precache"
+        {
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
+            "particle"  "particles/units/heroes/hero_omniknight/omniknight_purification.vpcf"
+            "particle"  "particles/units/heroes/hero_omniknight/omniknight_purification_cast.vpcf"
+            "particle"  "particles/units/heroes/hero_omniknight/omniknight_purification_hit.vpcf"
+        }
+        
+        // Ability General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+
+        // Ability Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "400"
+        "AbilityCastPoint"              "0.2"
+
+        // Ability Resource
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "11.0"
+        "AbilityManaCost"               "85 100 115 130"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "heal_damage"               "90 160 230 300"
+            "radius"                    "260"
+        }
+    }
+	"custom_omniknight_heavenly_grace"
+	{
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/omniknight/abilities/custom_omniknight_heavenly_grace"
+        "AbilityTextureName"            "omniknight_repel"
+        "FightRecapLevel"               "1"
+        "precache"
+        {
+            "particle"  "particles/units/heroes/hero_omniknight/omniknight_repel_cast.vpcf" 
+            "particle"  "particles/units/heroes/hero_omniknight/omniknight_heavenly_grace_buff.vpcf"
+        }
+        // Ability General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_NO"
+
+        // Ability Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "500"
+        "AbilityCastPoint"              "0.25"
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "26 22 18 14"
+        
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "100 110 120 130"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "duration"              "8"
+            "hp_regen"              "8 16 24 32"
+            "ms_bonus"              "10 20 30 40"
+            "status_resist"         "10 20 30 40"
+        }
+	}
+	"custom_omniknight_degen_aura"
+	{
+	    // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/omniknight/abilities/custom_omniknight_heavenly_grace"
+        "AbilityTextureName"            "omniknight_degen_aura"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "375"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "ms_slow"               "10 15 20 25"
+            "damage_reduction"      "10 15 20 25"
+            "radius"                "375"
+            "time_to_max"           "4"
+        }
+	}
+	"custom_omniknight_guardian_angel"
+	{
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "ability_lua"
+        "ScriptFile"                    "heroes/omniknight/abilities/custom_omniknight_guardian_angel"
+        "AbilityTextureName"            "omniknight_guardian_angel"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
+        "SpellDispellableType"          "SPELL_DISPELLABLE_NO"
+        "FightRecapLevel"               "2"
+        "AbilitySound"                  "Hero_Omniknight.GuardianAngel.Cast"
+
+        "precache"
+        {
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
+            "particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
+            "particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_omni.vpcf"
+            "particle"  "particles/units/heroes/omniknight_p_buff.vpcf"
+        }
+
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "160 140 120"
+        "AbilityCastPoint"              "0.4"
+        "AbilityCastAnimation"          "ACT_DOTA_CAST_ABILITY_4"
+        
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "150 200 250"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "duration"                  "8"
+            "radius"                    "1200"
+            "block_instances"           "3 4 5"
+            "hp_regen"                  "16 24 32"
+        }
+	}
+}
