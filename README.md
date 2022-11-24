@@ -7,7 +7,7 @@ Context means that things in dota share certain properties with each other. This
 
 Agency means that you are responsible for the consequences of your actions. Some examples of things that undermine agency include neutral items and comeback gold.
 
-From this goal I have derived several concrete goals:
+Here are the ways I will try to accomplish this:
 1. Remove all inconsistencies and rework existing mechanics so they are less prone to inconsistencies (rubick, creep-heroes)
 2. Remove all free net worth mechanics
 3. Rework talents and aghanim's upgrades to behave more like regular skill points
