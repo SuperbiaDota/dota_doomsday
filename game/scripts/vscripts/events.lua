@@ -187,12 +187,11 @@ function GameMode:OnLastHit(keys)
 				streak = 0
 			end
 
-    	    local KillstreakBounty = streak * 60
-    	    local aoe_gold = 180 + KillstreakBounty
+    	    local aoe_gold = 180 + streak * 60
 		
     	    local assist_heroes =  FindUnitsInRadius(
-    	    	victim:GetTeam(),
-    	    	victim:GetOrigin(),
+    	    	killerHero:GetTeamNumber(),
+    	    	victim:GetAbsOrigin(),
     	    	nil,
     	    	1500,
     	    	DOTA_UNIT_TARGET_TEAM_FRIENDLY,
@@ -202,56 +201,37 @@ function GameMode:OnLastHit(keys)
     	    	false
     	    )
 
-    	    local found_players = {}
-    	    local found_count = 0
+    	    local found_players = {} -- players in 1500 radius of kill
+    	    local assist_count = 0
 			
-    	    for _, ally_hero in ipairs(assist_heroes) do -- TODO: test with lone druid, arc, meepo, monkey
+    	    for _, ally_hero in pairs(assist_heroes) do -- TODO: test with lone druid, arc, meepo, monkey
     	        local ally_player = ally_hero:GetPlayerID()
     	        if found_players[ally_player] == nil then
     	        	found_players[ally_player] = true
-    	        	found_count = found_count + 1
+    	        	assist_count = assist_count + 1
     	        end
     	    end
 			
-			local assist_count = nil
-			if found_players[player] then
-				assist_count = found_count
-			else
-				assist_count = found_count
+			if not found_players[keys.PlayerID] then
+				assist_count = assist_count + 1
 			end
 
     	    aoe_gold = math.floor( aoe_gold / assist_count)
 		
     	    killerHero:ModifyGold(aoe_gold, true, DOTA_ModifyGold_HeroKill)
     	    for ally_player, _ in pairs(found_players) do
-    	        ally_player:GetAssignedHero():ModifyGold(aoe_gold, true, DOTA_ModifyGold_HeroKill)
+    	        PlayerResource:GetPlayer(ally_player):GetAssignedHero():ModifyGold(aoe_gold, true, DOTA_ModifyGold_HeroKill)
     	    end
 
-    	    -- update buyback
-    	    local streak = killerHero:GetStreak()
-    		if streak > 10 then
-				streak = 10 
-			elseif streak < 3 then
-				streak = 0
-			end
-	
+    	    -- update buyback	
 			if killerHero.max_streak < streak then
 				killerHero.max_streak = streak
 			end
 
 			self.UpdateBuyback(keys.PlayerID)
-	
     	end
-    end
-
-    if victim:GetTeamNumber() == DOTA_TEAM_NEUTRALS then -- TODO: roshan
-        local spawner_name = nil
-        if victim:GetOwnerEntity() then
-            spawner_name = victim:GetOwnerEntity():GetNeutralSpawnerName()
-        else
-            spawner_name = victim:GetNeutralSpawnerName()
-        end
-        --print("neutral created, spawner name: " .. spawner_name)
+    elseif victim:GetTeamNumber() == DOTA_TEAM_NEUTRALS then -- TODO: roshan
+        local spawner_name = victim:GetNeutralSpawnerName()
 
         local location_to_num = { -- TODO: make pseudo random tied to camps not heroes
             ["chapel"] = 1,
@@ -263,12 +243,9 @@ function GameMode:OnLastHit(keys)
 
         local location = string.sub(spawner_name, 1, -3)
         local drop_table = self.material_drop_info[location]
-        DeepPrintTable(drop_table)
         if drop_table ~= nil then
             for chance, item_table in spairs(drop_table, function(t,a,b) return tonumber(a) < tonumber(b) end) do -- smallest chance is rolled first
-                --print("chance: " .. chance)
                 if RollPseudoRandomPercentage(tonumber(chance), location_to_num[location], player:GetAssignedHero()) then
-                    --print("found item: " .. )
                     local item_name = item_table[tostring(math.random(item_table["count"]))]
                     local item = CreateItem(item_name, nil, nil)
                     CreateItemOnPositionSync(victim:GetAbsOrigin(), item)
@@ -276,10 +253,6 @@ function GameMode:OnLastHit(keys)
             end
         end
     end
-
-    -- get camp location
-    -- get potential item drops
-    -- drop item at creep kill location
 end
 
 -- A tree was cut down by tango, quelling blade, etc
@@ -479,8 +452,8 @@ end
 function GameMode:UpdateBuyback ( player_id )
 	local player = PlayerResource:GetPlayer( player_id )
 	local hero = player:GetAssignedHero()
-	local buyback_increase = 2-(hero.max_streak * hero.max_streak/25/4) 
-    -- 1 - 1/4 * (x/5)^2; start at 1 then exponentially approach 0 at streak = 10
+	local buyback_increase = 2-(hero.max_streak * hero.max_streak/100) 
+    -- 2 - 1/4 * (x/5)^2; start at 2 then exponentially approach 1 at streak = 10
     local buyback_cost = hero.BB_Multiplier * buyback_increase * hero:GetLevel() * 100
     PlayerResource:SetCustomBuybackCost(hero:GetPlayerID(), buyback_cost)
 end

@@ -24,9 +24,6 @@ function UpdateCraftUI( event )
     local craft_list = {}
     local craft_count = 0
 
-    print(event.player_id)
-    print(event.entindex)
-
     for craftTime, itemTable in pairs(GameMode.craft_recipes) do
         for craftResult, craftRecipe in pairs(itemTable) do
             local craftRecipe_copy = DeepCopyTable(craftRecipe)

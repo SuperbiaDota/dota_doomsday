@@ -24,6 +24,7 @@ function custom_ability_craft:OnSpellStart()
 end
 
 function custom_ability_craft:OnChannelFinish(bInterrupted)
+    caster:StartGesture(ACT_DOTA_TELEPORT_END)
     if not IsServer() or bInterrupted then return end
 
     local caster = self:GetCaster()
@@ -58,5 +59,4 @@ function custom_ability_craft:OnChannelFinish(bInterrupted)
     end
 
     caster:AddItem(CreateItem(self.item, caster, caster))
-    caster:StartGesture(ACT_DOTA_TELEPORT_END)
 end
