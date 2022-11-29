@@ -33,6 +33,7 @@
 
         "AbilityValues"
         {
+            "radius"                    "300"
             "damage"                    "75 150 225 300"
             "blind_duration"            "3 3.5 4 4.5"
         }
@@ -108,13 +109,15 @@
 
         "AbilityValues"
         {
-            "delay"                     "3"
-            "radius"                    "100 200 300 400"
-            "vision_radius"             "200 300 400 500"
+            "delay"                     "4"
+            "tracking_duration"         "2"
+            "radius"                    "300"
+            "vision_radius"             "400"
             "vision_linger"             "2"
-            "burst_damage"              "100 125 150 175"
-            "burn_damage"               "35 45 55 65"
-            "burn_duration"             "1 2 3 4"
+            "burst_damage_pct"          "11 14 17 20"
+            "burst_duration"            "1"
+            "burn_damage"               "25 35 45 55"
+            "burn_duration"             "4"
             "burn_interval"             "0.5"
         }
 	}

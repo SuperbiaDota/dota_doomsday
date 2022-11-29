@@ -23,14 +23,27 @@ function custom_tinker_laser:OnSpellStart()
         damage = self:GetSpecialValueFor( "damage" ),
         damage_type = self:GetAbilityDamageType(),
         ability = self
-    } 
+    }
+    local enemies = FindUnitsInRadius(
+        caster:GetTeamNumber(),
+        target:GetAbsOrigin(),
+        nil,
+        self:GetSpecialValueFor("radius"),
+        DOTA_UNIT_TARGET_TEAM_ENEMY,
+        DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+        DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE,
+        0,
+        false
+    )
 
 	-- logic
-    target:AddNewModifier(
-        caster,
-        self,
-        "custom_modifier_tinker_laser_blind",
-        {duration = self:GetSpecialValueFor("blind_duration")}
-    )
+    for _, enemy in pairs(enemies) do
+        enemy:AddNewModifier(
+            caster,
+            self,
+            "custom_modifier_tinker_laser_blind",
+            {duration = self:GetSpecialValueFor("blind_duration")}
+        )
+    end
     ApplyDamage(damage_table)
 end

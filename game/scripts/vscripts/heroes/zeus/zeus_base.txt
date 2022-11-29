@@ -7,15 +7,16 @@
 	{
 		"Ability1"		"custom_zeus_arc_lightning"
 		"Ability2"		"custom_zeus_lightning_bolt"
-		"Ability3"		"custom_zeus_heavenly_jump"
-		"Ability4"		"custom_ability_craft_1"
+		"Ability3"		"custom_zeus_nimbus_cloud"
+		"Ability4"		"generic_hidden"
 		"Ability5"		"custom_zeus_static_field"
-		"Ability6"		"custom_zeus_thundergods_wrath"		
-		"Ability10"		"custom_zeus_special_bonus_unique_1" // Lightning Bolt can be Cast in Area Revealed by Thundergod's Wrath
-		"Ability11"		"custom_zeus_special_bonus_unique_2" // +1s Lightning Bolt Stun Duration
-		"Ability12"		"custom_zeus_special_bonus_unique_3" // Heavenly Jump Affects All Enemy Heroes in Range
-		"Ability13"		"custom_zeus_special_bonus_unique_4" // -20s Thundergod's Wrath Cooldown
-		"Ability14"		"custom_zeus_special_bonus_unique_5" // +40 Arc Lightning Damage
+		"Ability6"		"custom_zeus_thundergods_wrath"
+
+		"Ability10"		"custom_zeus_special_bonus_1"
+		"Ability11"		"custom_zeus_special_bonus_2"
+		"Ability12"		"custom_zeus_special_bonus_3"
+		"Ability13"		"custom_zeus_special_bonus_4"
+		"Ability14"		"custom_zeus_special_bonus_5"
 
 	}
 }

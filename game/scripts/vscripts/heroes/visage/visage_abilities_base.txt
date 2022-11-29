@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+	"custom_visage_summon_familiars"
+	{
+		"AbilityCooldown"			"120"
+		"AbilityValues"
+		{
+			"familiar_count"		"2"
+			"damage"				"15 20 25 30"
+		}
+	}
+	"custom_visage_stone_form"
+	{
+		"AbilityValues"
+		{
+			"damage"				"50"
+			"stun_duration"			"0.5 0.6 0.7 0.8"
+			"delay"					"0.55"
+			"duration"				"6"
+			"hp_regen_pct"			"16.7"	
+		}
+	}
+	"custom_visage_soul_assumption"
+	{
+	
+	}
+	"custom_visage_gravekeepers_cloak"
+	{
+		"AbilityCastPoint"					"0.55"
+		"AbilityCooldown"					"60"
+		"AbilityManaCost"					"125"
+		"AbilityValues"
+		{
+			"damage"						"50"
+			"stun_duration"					"0.5 0.6 0.7 0.8"
+			"duration"						"6"
+			"hp_regen_pct"					"0"
+			"layer_recharge_time"			"6 5 4 3"
+			"layer_recharge_multiplier"		"2"
+		}
+	}
+	"custom_visage_silent_as_the_grave"
+	{
+		"AbilityCooldown"			"80 60 40"
+		"AbilityValues"
+		{
+			"invis_duration"				"35"
+			"ms_steal_pct"					"15 20 25"
+			"as_steal"						"40 60 80"
+			"steal_duration"				"4 5 6"
+			"ms_bonus_pct"					"20"
+		}
+	}
+}

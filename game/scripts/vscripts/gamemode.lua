@@ -55,6 +55,8 @@ require( "scripts/vscripts/util/util" )
 -- Handles spawning creep waves
 require( "libraries/lane_creeps" )
 
+-- Handles custom buyback calculations
+require( 'buyback' )
 
 -- This is a detailed example of many of the containers.lua possibilities, but only activates if you use the provided "playground" map
 if GetMapName() == "playground" then
@@ -149,8 +151,6 @@ function GameMode:OnGameInProgress()
     GameRules:SpawnNeutralCreeps()
 end
 
-
-
 -- This function initializes the game mode and is called before anyone loads into the game
 -- It can be used to pre-initialize any values/tables that will be needed later
 function GameMode:InitGameMode()
@@ -162,6 +162,7 @@ function GameMode:InitGameMode()
 
     self.craft_recipes = LoadKeyValues( "scripts/npc/npc_craft_recipes.txt" )
     self.material_drop_info = LoadKeyValues("scripts/npc/npc_items_mat_drop.txt")
+    self.dropped_materials = {}
 
     FilterManager:Init()
     LaneCreepLogic:Init()
@@ -170,10 +171,29 @@ function GameMode:InitGameMode()
     ListenToGameEvent("dota_hero_inventory_item_change", FormatItemChange, nil)
     ListenToGameEvent("dota_inventory_item_added", FormatItemAdded, nil)
     CustomGameEventManager:RegisterListener( "cast_ability_craft", OnCastCraft )
+    FilterManager:AddModifyGoldFilter(
+        function ( context, event )
+            if event.reason_const == DOTA_ModifyGold_HeroKill 
+            or event.reason_const == DOTA_ModifyGold_CourierKill 
+            or event.reason_const == DOTA_ModifyGold_SharedGold then
+                return false
+            end
+        end, 
+        nil
+    )
 
     GameRules:GetGameModeEntity():SetCustomAttributeDerivedStatValue(DOTA_ATTRIBUTE_STRENGTH_HP_REGEN , 0.03)
     GameRules:GetGameModeEntity():SetFreeCourierModeEnabled(true)
+
+    GameRules:GetGameModeEntity():SetAllowNeutralItemDrops(false)
+    GameRules:GetGameModeEntity():SetNeutralItemHideUndiscoveredEnabled(true)
+    GameRules:GetGameModeEntity():SetNeutralStashEnabled(false)
+    GameRules:GetGameModeEntity():SetNeutralStashTeamViewOnlyEnabled(true)
+
+    GameRules:GetGameModeEntity():SetGiveFreeTPOnDeath(false)
+
     GameRules:SetGoldTickTime(0)
+    GameRules:SetBountyRuneSpawnInterval(0)
 
     local all_buildings = FindUnitsInRadius(
         DOTA_TEAM_FIRST ,
@@ -209,4 +229,9 @@ function GameMode:ExampleConsoleCommand()
     end
 
     print( '*********************************************' )
+end
+
+-- TODO: add this to some library file?
+function CDOTA_BaseNPC_Hero:GetRespawnTime()
+    return math.floor(11.859 + 0.141 * self:GetLevel() * self:GetLevel())
 end

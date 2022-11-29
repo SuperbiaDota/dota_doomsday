@@ -6,6 +6,7 @@
 	// Talent 1
 	"custom_hero_special_bonus_1"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
@@ -20,6 +21,7 @@
 	// Talent 2
 	"custom_hero_special_bonus_2"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
@@ -34,35 +36,45 @@
 	// Talent 3
 	"custom_hero_special_bonus_3"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-	
-			"value"			"1"
+			"custom_ability_name"
+			{
+				"key"			"value"
+			}
 		}
 	}
 	
 	// Talent 4
 	"custom_hero_special_bonus_4"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-			"value"			"1"
+			"custom_ability_name"
+			{
+				"key"			"value"
+			}
 		}
 	}
 	
 	// Talent 5
 	"custom_hero_special_bonus_5"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-	
-			"value"			"1"
+			"custom_ability_name"
+			{
+				"key"			"value"
+			}
 		}
 	}
 }

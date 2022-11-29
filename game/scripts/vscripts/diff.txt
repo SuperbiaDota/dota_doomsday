@@ -80,6 +80,16 @@ drag item to ground now drops item directly at hero's feet
 HERO CONCEPTS
 
 meepo: clones equip all items used by main meepo but they are muted
+drow ranger: mei from overwatch
+visage: summon familiars is basic ability, silent as the grave is ult and applies grave chill
+huskar: berserkers blood grants armor and health restoration amp. inner fire stuns briefly and gives magic barrier. attacking life break target gives huskar lifesteal
+omniknight: heavenly grace gives status resist, degen aura reduces outgoing damage, guardian angel blocks damage instances
+spectre: shadow step renamed to torment and is part of haunt
+troll warlord: berserkers rage bashes, ult is target ability
+arc warden: double has longer duration but longer cd. spark wraith duration significantly decreased
+tinker: defense matrix replaced with super mega death ray - gives vision over target and deals aoe damage after delay
+lifestealer: reverted changes
+rubick: null field can be activated to disjoint projectiles on allies in range, spell steal can save up to 2 spells innately
 
 new hero: gunslinger (adds some cool mechanics from league that i think could work in dota)
 

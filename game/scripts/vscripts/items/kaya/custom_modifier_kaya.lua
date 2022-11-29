@@ -18,7 +18,7 @@ function custom_modifier_kaya:OnCreated()
 function custom_modifier_kaya:DeclareFunctions()
     return {
        MODIFIER_PROPERTY_STATS_INTELLECT_BONUS,
-       MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE ,
+       MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE_UNIQUE  ,
        MODIFIER_PROPERTY_MANA_REGEN_CONSTANT     
     }
 end
@@ -27,7 +27,7 @@ function custom_modifier_kaya:GetModifierBonusStats_Intellect()
     return self.int_bonus
 end
 
-function custom_modifier_kaya:GetModifierSpellAmplify_Percentage()
+function custom_modifier_kaya:GetModifierSpellAmplify_PercentageUnique()
     return self.spell_amp_pct
 end
 

@@ -1,42 +1,10 @@
 //=================================================================================================================
-// Zeus: Special Bonuses
+// zeus: Special Bonuses
 //=================================================================================================================
-
 "DOTAAbilities"
 {
-	// Lightning Bolt can be Cast on Area Revealed by Thundergod's Wrath
-	"custom_zeus_special_bonus_unique_1"
-	{
-		"BaseClass"						"special_bonus_undefined"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	}
-
-	// +1s Lightning Bolt Stun Duration
-	"custom_zeus_special_bonus_unique_2"
-	{
-		"BaseClass"						"special_bonus_undefined"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityValues"
-		{
-			"custom_zeus_lightning_bolt"
-			{
-				"stun_duration"			"1.0"
-			}
-		}
-	}
-
-	// Heavenly Jump Affects All Enemy Heroes in Range
-	"custom_zeus_special_bonus_unique_3"
-	{
-		"BaseClass"						"special_bonus_undefined"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	}
-
-	// -20s Thundergod's Wrath Cooldown
-	"custom_zeus_special_bonus_unique_4"
+	// Thundergod's Fury
+	"custom_zeus_special_bonus_1"
 	{
 		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
@@ -45,32 +13,77 @@
 		{
 			"custom_zeus_thundergods_wrath"
 			{
-				"AbilityCooldown"			"-20"
+				"AbilityCooldown"			"-40"
 			}
 		}
 	}
-
-	// +40 Arc Lightning Damage
-	"custom_zeus_special_bonus_unique_5"
+	
+	// Heavy Bolts
+	"custom_zeus_special_bonus_2"
 	{
 		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-			"zuus_arc_lighting"
+			"custom_zeus_arc_lightning"
 			{
-				"arc_damage"			"40"
+				"damage"			"40"
+			}
+		}
+	}
+	
+	// Gathering Clouds
+	"custom_zeus_special_bonus_3"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_zeus_nimbus_cloud"
+			{
+				"radius"			"250"
+			}
+		}
+	}
+	
+	// Electric Shock
+	"custom_zeus_special_bonus_4"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_zeus_lightning_bolt"
+			{
+				"stun_duration"			"1"
+			}
+		}
+	}
+	
+	// You can't run from Heaven!
+	"custom_zeus_special_bonus_5"
+	{
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityValues"
+		{
+			"custom_zeus_nimbus_cloud"
+			{
+				"AbilityCastRange"			"99999"
 			}
 		}
 	}
 }
 
 //-------------------------------------------------------------------------------------------------------------
-// Zeus: Special Bonus Tooltips
+// zeus: Special Bonus Tooltips
 //-------------------------------------------------------------------------------------------------------------
-"DOTA_Tooltip_ability_custom_zeus_special_bonus_unique_1"		"Lightning Bolt can be Cast on Area Revealed by Thundergod's Wrath"
-"DOTA_Tooltip_ability_custom_zeus_special_bonus_unique_2"		"+1s Lightning Bolt Stun Duration"
-"DOTA_Tooltip_ability_custom_zeus_special_bonus_unique_3"		"Heavenly Jump Affects All Enemy Heroes in Range"
-"DOTA_Tooltip_ability_custom_zeus_special_bonus_unique_4"		"-20s Thundergod's Wrath Cooldown"
-"DOTA_Tooltip_ability_custom_zeus_special_bonus_unique_5"		"+40 Arc Lightning Damage"
+// "DOTA_Tooltip_ability_custom_zeus_special_bonus_1"		"Talent 1"
+// "DOTA_Tooltip_ability_custom_zeus_special_bonus_2"		"Talent 2"
+// "DOTA_Tooltip_ability_custom_zeus_special_bonus_3"		"Talent 3"
+// "DOTA_Tooltip_ability_custom_zeus_special_bonus_4"		"Talent 4"
+// "DOTA_Tooltip_ability_custom_zeus_special_bonus_5"		"Talent 5"

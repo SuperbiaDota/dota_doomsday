@@ -1,94 +1,92 @@
 //=================================================================================================================
-// rubick: Special Bonuses
+// visage: Special Bonuses
 //=================================================================================================================
 "DOTAAbilities"
 {
 	// Talent 1
-	"custom_rubick_special_bonus_1"
+	"custom_visage_special_bonus_1"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-			"custom_rubick_simulacrum"
+			"custom_visage_summon_familiars"
 			{
-				"charges"			"1"
+				"damage"			"10"
 			}
 		}
 	}
 	
 	// Talent 2
-	"custom_rubick_special_bonus_2"
+	"custom_visage_special_bonus_2"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-			"custom_rubick_telekinesis"
+			"custom_visage_silent_as_the_grave"
 			{
-				"land_distance"			"400"
+				"AbilityCooldown"			"-10"
 			}
 		}
 	}
 	
 	// Talent 3
-	"custom_rubick_special_bonus_3"
+	"custom_visage_special_bonus_3"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-	
-			"custom_rubick_telekinesis"
+			"custom_visage_summon_familiars"
 			{
-				"AbilityCastRange"		"150"
-			}
-			"custom_rubick_fade_bolt"
-			{
-				"AbilityCastRange"		"150"
-			}
-			"custom_rubick_simulacrum"
-			{
-				"AbilityCastRange"		"150"
+				"familiar_count"			"1"
 			}
 		}
 	}
 	
 	// Talent 4
-	"custom_rubick_special_bonus_4"
+	"custom_visage_special_bonus_4"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-			"custom_rubick_simulacrum"
+			"visage_soul_assumption"
 			{
-				"stolen_spell_amp"		"15"
 			}
 		}
 	}
 	
 	// Talent 5
-	"custom_rubick_special_bonus_5"
+	"custom_visage_special_bonus_5"
 	{
+		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-	
-			"custom_rubick_fade_bolt"
+			"custom_visage_gravekeepers_cloak"
 			{
-				"AbilityCooldown"		"-5"
+				"stun_duration"			"0.5"
+			}
+			"custom_visage_stone_form"
+			{
+				"stun_duration"			"0.5"
 			}
 		}
 	}
 }
 
 //-------------------------------------------------------------------------------------------------------------
-// rubick: Special Bonus Tooltips
+// visage: Special Bonus Tooltips
 //-------------------------------------------------------------------------------------------------------------
-// "DOTA_Tooltip_ability_custom_rubick_special_bonus_1"		"Talent 1"
-// "DOTA_Tooltip_ability_custom_rubick_special_bonus_2"		"Talent 2"
-// "DOTA_Tooltip_ability_custom_rubick_special_bonus_3"		"Talent 3"
-// "DOTA_Tooltip_ability_custom_rubick_special_bonus_4"		"Talent 4"
-// "DOTA_Tooltip_ability_custom_rubick_special_bonus_5"		"Talent 5"
+// "DOTA_Tooltip_ability_custom_visage_special_bonus_1"		"Talent 1"
+// "DOTA_Tooltip_ability_custom_visage_special_bonus_2"		"Talent 2"
+// "DOTA_Tooltip_ability_custom_visage_special_bonus_3"		"Talent 3"
+// "DOTA_Tooltip_ability_custom_visage_special_bonus_4"		"Talent 4"
+// "DOTA_Tooltip_ability_custom_visage_special_bonus_5"		"Talent 5"

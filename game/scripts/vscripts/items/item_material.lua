@@ -32,12 +32,13 @@ FilterManager:AddExecuteOrderFilter(
             end
         elseif order == DOTA_UNIT_ORDER_DROP_ITEM then
             local item = EntIndexToHScript( keys.entindex_ability )
-            if unit then
+            if unit and unit:CanDropItems() then
                 local unit_pos = unit:GetAbsOrigin()
                 unit_pos.z = GetGroundHeight(unit_pos, nil)
-                local target_pos = unit_pos + RandomVector(unit:GetHullRadius())
+                local target_pos = unit_pos + RandomVector(unit:BoundingRadius2D())
                 math.random(360)
                 unit:DropItemAtPositionImmediate( item, target_pos )
+                FireGameEvent("item_dropped", {item = item})
             end
             return false
         end

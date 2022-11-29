@@ -145,7 +145,7 @@ function GameMode:OnPlayerLevelUp( keys )
 	local player = EntIndexToHScript(keys.player)
 	local level = keys.level
 
-	self:UpdateBuyback( keys.player_id )
+	Buyback:UpdateBuyback( keys.player_id )
 end
 
 -- A player last hit a creep, a tower, or a hero
@@ -228,7 +228,7 @@ function GameMode:OnLastHit(keys)
 				killerHero.max_streak = streak
 			end
 
-			self.UpdateBuyback(keys.PlayerID)
+			BuyBack:UpdateBuyback(keys.PlayerID)
     	end
     elseif victim:GetTeamNumber() == DOTA_TEAM_NEUTRALS then -- TODO: roshan
         local spawner_name = victim:GetNeutralSpawnerName()
@@ -343,12 +343,10 @@ function GameMode:OnEntityKilled( keys )
 
 	-- Put code here to handle when an entity gets killed
 
-	if victim:IsRealHero() then
-    	local victim_level = victim:GetLevel()
-		
+	if victim:IsRealHero() then		
 		-- set respawn
-    	local respawn_timer = math.floor(11.859 + 0.141 * victim_level * victim_level)
-    	GameRules:GetGameModeEntity():SetFixedRespawnTime(respawn_timer)
+		-- TODO: check if this works automatically when i redefine GetRespawnTime
+    	--GameRules:GetGameModeEntity():SetFixedRespawnTime(victim:GetRespawnTime())
 
     	victim:ClearStreak()
     end
@@ -449,11 +447,18 @@ function GameMode:OnPlayerChat(keys)
 	local text = keys.text
 end
 
-function GameMode:UpdateBuyback ( player_id )
-	local player = PlayerResource:GetPlayer( player_id )
-	local hero = player:GetAssignedHero()
-	local buyback_increase = 2-(hero.max_streak * hero.max_streak/100) 
-    -- 2 - 1/4 * (x/5)^2; start at 2 then exponentially approach 1 at streak = 10
-    local buyback_cost = hero.BB_Multiplier * buyback_increase * hero:GetLevel() * 100
-    PlayerResource:SetCustomBuybackCost(hero:GetPlayerID(), buyback_cost)
+function GameMode:OnItemDropped( keys )
+	if not IsServer() then return end
+	if string.sub(keys.item:GetAbilityName(), 1, 8) == "item_mat" then -- TODO: only time out basic materials
+		self.dropped_materials[item] = Timers:CreateTimer(
+			{
+				endTime = 15,
+				item = keys.item,
+				callback = function(args)
+					args.item:Destroy()
+				end
+			}
+		)
+	end
 end
+

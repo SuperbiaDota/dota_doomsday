@@ -1,77 +1,85 @@
 //=================================================================================================================
-// Hero: Special Bonuses
+// tinker: Special Bonuses
 //=================================================================================================================
 "DOTAAbilities"
 {
 	// Talent 1
-	"custom_hero_special_bonus_1"
+	"custom_tinker_special_bonus_1"
 	{
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-			"custom_ability_name"
+			"custom_tinker_laser"
 			{
-				"key"			"value"
+				"AbilityCastRange"		"300"
+				"radius"				"300"
 			}
 		}
 	}
 	
 	// Talent 2
-	"custom_hero_special_bonus_2"
+	"custom_tinker_special_bonus_2"
 	{
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-			"custom_ability_name"
+			"custom_tinker_heat_seeking_missile"
 			{
-				"key"			"value"
+				"target_count"			"1"
 			}
 		}
 	}
 	
 	// Talent 3
-	"custom_hero_special_bonus_3"
+	"custom_tinker_special_bonus_3"
 	{
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-	
-			"value"			"1"
+			"custom_tinker_rearm"
+			{
+				"AbilityManaCost"			"-30"
+			}
 		}
 	}
 	
 	// Talent 4
-	"custom_hero_special_bonus_4"
+	"custom_tinker_special_bonus_4"
 	{
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-			"value"			"1"
+			"custom_tinker_mega_death_ray"
+			{
+				"AbilityCastRange"			"400"
+			}
 		}
 	}
 	
 	// Talent 5
-	"custom_hero_special_bonus_5"
+	"custom_tinker_special_bonus_5"
 	{
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityValues"
 		{
-	
-			"value"			"1"
+			"custom_tinker_mega_death_ray"
+			{
+				"burst_damage_pct"			"10"
+			}
 		}
 	}
 }
 
 //-------------------------------------------------------------------------------------------------------------
-// Hero: Special Bonus Tooltips
+// tinker: Special Bonus Tooltips
 //-------------------------------------------------------------------------------------------------------------
-// "DOTA_Tooltip_ability_custom_hero_special_bonus_1"		"Talent 1"
-// "DOTA_Tooltip_ability_custom_hero_special_bonus_2"		"Talent 2"
-// "DOTA_Tooltip_ability_custom_hero_special_bonus_3"		"Talent 3"
-// "DOTA_Tooltip_ability_custom_hero_special_bonus_4"		"Talent 4"
-// "DOTA_Tooltip_ability_custom_hero_special_bonus_5"		"Talent 5"
+// "DOTA_Tooltip_ability_custom_tinker_special_bonus_1"		"Talent 1"
+// "DOTA_Tooltip_ability_custom_tinker_special_bonus_2"		"Talent 2"
+// "DOTA_Tooltip_ability_custom_tinker_special_bonus_3"		"Talent 3"
+// "DOTA_Tooltip_ability_custom_tinker_special_bonus_4"		"Talent 4"
+// "DOTA_Tooltip_ability_custom_tinker_special_bonus_5"		"Talent 5"

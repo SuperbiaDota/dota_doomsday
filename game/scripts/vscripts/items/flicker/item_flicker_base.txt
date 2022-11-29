@@ -1,31 +1,31 @@
 "DOTAAbilities"
 {
     //=================================================================================================================
-    // itemName
+    // flicker
     //=================================================================================================================
-    "item_custom_itemName"
+    "item_custom_flicker"
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
         "BaseClass"                     "item_lua"
-        "ScriptFile"                    "items/itemName/item_custom_itemName"
+        "ScriptFile"                    "items/flicker/item_custom_flicker"
 
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
         "FightRecapLevel"               "1"
 
         // Stats        
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "75"
-        "AbilityCooldown"               "0"
-        "AbilitySharedCooldown"         ""
+        "AbilityManaCost"               "65"
+        "AbilityCooldown"               "10"
+        "AbilitySharedCooldown"         "manta"
 
 
-        "AbilityTextureName"            "item_itemName"
+        "AbilityTextureName"            "item_flicker"
 
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
-        "ItemCost"                      "5450"
-        "ItemShopTags"                  "damage;attack_speed;movespeed;hard_to_tag"
+        "ItemCost"                      "4600 Gold"
+        "ItemShopTags"                  "attack_speed;movespeed;hard_to_tag"
         "ItemQuality"                   "epic"
         "ItemAliases"                   "alias;alias"
         //"ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
@@ -36,11 +36,18 @@
         //-------------------------------------------------------------------------------------------------------------
         "AbilityValues"
         {
+            "str_bonus"                 "10"
+            "agi_bonus"                 "26"
+            "int_bonus"                 "10"
+            "ms_bonus_pct"              "8"
+            "as_bonus"                  "12"
+
+            "invuln_duration"           "0.1"
         }
     }
-    "item_recipe_custom_itemName"
+    "item_recipe_custom_flicker"
     {
-        "BaseClass"                     "item_datadriven" // set to NULL to disable combining
+        "BaseClass"                     "NULL"
         // Item Info
         //-------------------------------------------------------------------------------------------------------------
         "ItemCost"                      "0"
@@ -48,10 +55,10 @@
         // Recipe
         //-------------------------------------------------------------------------------------------------------------
         "ItemRecipe"                    "1"
-        "ItemResult"                    "item_custom_itemName"
+        "ItemResult"                    "item_custom_flicker"
         "ItemRequirements"
         {
-            "01"                        "component;component"
+            "01"                        "item_manta;"
         }
     }
 }
